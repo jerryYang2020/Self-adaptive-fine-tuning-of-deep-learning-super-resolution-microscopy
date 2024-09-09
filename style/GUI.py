@@ -6,8 +6,8 @@ def run():
     with gr.Blocks(css='style\style.css') as demo:
         with gr.Row():
             with gr.Column(scale=15):
-                gr.Markdown(value="<h1 id='h1'> Online Fine-tuning of Deep-learning Microscopy</h1>")
-                gr.Markdown(value="<h2 id='h2'>[GitHub](https://www.baidu.com) | [Paper](https://www.baidu.com) | [Project Page](https://www.baidu.com)</h2>")
+                gr.Markdown(value="<h1 id='h1'> Online Fine-tuning of Deep-learning Super-resolution Microscopy</h1>")
+                gr.Markdown(value="<h2 id='h2'>[GitHub](https://github.com/jerryYang2020/Online_fine-tuning_of_deep-learning_super-resolution_microscopy.git) </h2>")
                 gr.Markdown(value="<h2 id='h2'> If this method is helpful for you, please cite our paper. Thanks!</h2>")
         with gr.Tab(label = "SSF"):
             with gr.Row():
