@@ -108,6 +108,4 @@ NanoJ-SRRF plugin in ImageJ, as a dual-channel input(Ring radius was set to 1 an
    - **SuperResolution**: Select a satisfactory fine-tuning model and click the SuperResolution button. The model corresponding to the selected epoch will be called to perform super-resolution reconstruction on the image. The result will be displayed in the form of video.
    ![alt text](image/5.png)
 
-## Contact
-If you have any questions, please email `tainjie@alu.cau.edu.cn`
 
