@@ -1,0 +1,39 @@
+
+#### datasets
+datasets:
+    ###datadir of the LR image/video for online fine-tuning
+    datadir_LRimage: test_data\SEC61B_TIRF.tif
+    ###datadir of the edgemap for SFSRM
+    datadir_edgemap: test_data\SEC61B_EDGE.tif
+    ###datadir of the live-cell smlm for SFSRM-WSF
+    datadir_smlm: test_data\SEC61B_SMLM.tif
+    ###datadir for saving the results
+    datadir_save: test_data\SEC61B_WSF\\
+    ###datadir of the pretrained SFSRM model
+    SFSRMmodeldir: Pretrained_model\SFSRM_SRmodel_SEC61B.pth
+
+
+#### parpmeters of Fine-tuning
+Fine-tuning:
+  ###upsampling scale of the Super-resolution reconstructions (default 4])
+  scale: 8
+  ###image size for training SFSRM (default [64,64]])
+  trainsize: [64,64]
+  ###image len for training SFSRM-WSF (live-cell video)(default 10)
+  timelen_WSF: 10
+  ###iteration times of the SFSRM-WSF (default 10)
+  iteration_times_WSF: 1
+  ###learning rate for the fine-tuning of SFSRM-WSF (default 0.00001)
+  SRlr_WSF: 0.00001
+
+
+#### parpmeters of super-resoltion reconstructions
+SR-Reconstrution:
+  ###predict size for super-resolution reconstructions (default [64,64]])
+  predict_size : [64, 64]
+  ###step length for super-resolution reconstructions (default 40 pixels)
+  step: 40
+  ###gap size for super-resolution reconstructions (default 6 pixels])
+  gap: 2
+
+
