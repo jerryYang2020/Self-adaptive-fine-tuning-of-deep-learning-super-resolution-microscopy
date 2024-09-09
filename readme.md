@@ -110,17 +110,3 @@ NanoJ-SRRF plugin in ImageJ, as a dual-channel input(Ring radius was set to 1 an
 
 ## Contact
 If you have any questions, please email `tainjie@alu.cau.edu.cn`
-
-## Citation
-
-If you find the code helpful in your resarch, please cite the following paper:
-
-```
-@article{qiao2022Rationalized,
-  title={Rationalized deep neural network for sustained super-resolution live imaging of rapid subcellular processes},       
-  author={Chang Qiao, Di Li, Yong Liu, Siwei Zhang, Kan Liu, Chong Liu, Yuting Guo, Tao Jiang, Chuyu Fang, Nan Li, Yunmin Zeng, Kangmin He, Xueliang Zhu, Jennifer Lippincott-Schwartz, Qionghai Dai, Dong Li},
-  journal={Nature Biotechnology},
-  year={2022},
-  publisher={Nature Publishing Group}
-}
-```
