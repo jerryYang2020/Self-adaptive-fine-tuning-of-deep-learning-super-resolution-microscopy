@@ -83,7 +83,7 @@ NanoJ-SRRF plugin in ImageJ, as a dual-channel input(Ring radius was set to 1 an
    ![alt text](image/2.png)
 
 3. **Correctly configure parameters and start fine-tuning and super-resolution reconstruction procedures**：
-   - **OFT-SSF/OFT-WSF**: Select the online fine-tuning mode.
+   - **OFT-SSF/OFT-WSF**: Select the OFT mode.
    - **File**
       - `LR_Img`: datadir of the LR data for OFT-SSF/OFT-WSF
       - `Edge_Img`: datadir of the edgemap for SFSRM
@@ -103,9 +103,9 @@ NanoJ-SRRF plugin in ImageJ, as a dual-channel input(Ring radius was set to 1 an
       - `consistency_level`: level of the consistency regularization term
       - `step`: step length for super-resolution reconstructions
       - `gap`: gap size for super-resolution reconstructions
-   - **FineTuning**: Click the **FineTuning** button to perform fine tuning. The results of each epoch will be displayed in the image gallery.
+   - **FineTuning**: Click the **FineTuning** button to perform OFT. The results of each iteration will be displayed.
    ![alt text](image/4.png)
-   - **SuperResolution**: Select a satisfactory fine-tuning model and click the SuperResolution button. The model corresponding to the selected epoch will be called to perform super-resolution reconstruction on the image. The result will be displayed in the form of video.
+   - **SuperResolution**: Select a satisfactory OFT iteration and click the SuperResolution button. The model corresponding to the selected iteration will be used to reconstruct super-resolution  video.
    ![alt text](image/5.png)
 
 
