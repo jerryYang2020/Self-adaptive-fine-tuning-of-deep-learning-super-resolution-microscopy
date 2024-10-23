@@ -70,6 +70,7 @@ for OFT.We used fixed-cell data or simulated data as the training dataset,
 augmented by random cropping, rotation, and flipping.SFSRM took the concatenation of a 
 low-resolution (LR) image and its edge map, which were reconstructed using the 
 NanoJ-SRRF plugin in ImageJ, as a dual-channel input(Ring radius was set to 1 and axes in ring was set to 5). 
+Pre-trained SFSRM models can be downloaded at the figshare repository (https://doi.org/10.6084/m9.figshare.26946601.v1).
 
 
 ## Fine-tuning steps
