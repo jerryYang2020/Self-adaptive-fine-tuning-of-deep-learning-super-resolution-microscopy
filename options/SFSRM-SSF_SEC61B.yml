@@ -1,0 +1,48 @@
+
+#### datasets
+datasets:
+    ###datadir of the LR image/video for online fine-tuning
+    datadir_LRimage: test_data\SEC61B_TIRF.tif
+    ###datadir of the edgemap for SFSRM
+    datadir_edgemap: test_data\SEC61B_EDGE.tif
+    ###datadir for saving the results
+    datadir_save: test_data\SEC61B_SSF\\
+    ###datadir of the pretrained SFSRM model
+    SFSRMmodeldir: Pretrained_model\SFSRM_SRmodel_SEC61B.pth
+    ###datadir of the pretrained Denoising model
+    DENmodeldir: Pretrained_model\UNet_Denoisingmodel_SEC61B.pth
+#### parpmeters of Fine-tuning
+Fine-tuning:
+  ###upsampling scale of the Super-resolution reconstructions (default 4])
+  scale: 8
+  ###image size for training SFSRM (default [64,64]])
+  trainsize: [64,64]
+  ###image len for training SFSRM (live-cell video)(default 10)
+  timelen: 10
+  ###iteration times of the SFSRM-SSF (default 20)
+  iteration_times: 10
+  ###Gaussian sigma of the microscopy before upsampling (default 1.6)
+  sigma: 1
+  ###kernal size of the simulated PSF (default 5)
+  ksize: 5
+  ###learning rate for the fine-tuning of SFSRM (default 0.00001)
+  SRlr: 0.000001
+  ###level of the continuity regularization term (default 1)
+  continuity_level: 1
+  ###level of the sparse regularization term (default 1.5)
+  sparse_level: 1
+  ###level of the consistency regularization term (default 1)
+  consistency_level: 2
+  ###Denoising network's joint training (default True)
+  joint_Training: True
+
+#### parpmeters of super-resoltion reconstructions
+SR-Reconstrution:
+  ###predict size for super-resolution reconstructions (default [64,64]])
+  predict_size : [64, 64]
+  ###step length for super-resolution reconstructions (default 40 pixels)
+  step: 40
+  ###gap size for super-resolution reconstructions (default 6 pixels])
+  gap: 2
+
+
