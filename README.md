@@ -37,7 +37,7 @@ experimental setup and is designed for experiments requiring high-precision arti
 ## Install
 1. Download the OnlineFinetuning_Demo.zip and unpack it. or clone this repository
    ```bash
-   git clone https://github.com/yourusername/your-repository.git
+   git clone https://github.com/jerryYang2020/Online_fine-tuning_of_deep-learning_super-resolution_microscopy.git
    ```
    The directory tree should be:
    - `/options`: hyperparameter configuration files
