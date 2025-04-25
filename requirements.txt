@@ -1,0 +1,8 @@
+pandas
+PyYAML
+scikit_image
+tqdm
+gradio==3.50.2
+opencv-python
+natsort
+
