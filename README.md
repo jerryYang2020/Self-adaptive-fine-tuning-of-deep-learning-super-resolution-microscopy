@@ -68,7 +68,7 @@ thereby improving the overall performance of the fine-tuning method.
 
    The directory tree should be:
    - `/options`: hyperparameter configuration files
-   - `/Pretrained_model`: 
+   - `/pretrained_model`: 
      Pre-trained SFSRM models can be downloaded at the figshare repository (https://doi.org/10.6084/m9.figshare.26946601.v4).
    - `/test_data`: test data
    - `/utils`: scripts folder
@@ -76,7 +76,7 @@ thereby improving the overall performance of the fine-tuning method.
 ```
 /
 | --- image
-| --- Pretrained_model # downloaded
+| --- pretrained_model # downloaded
 | ...
 ```
 
