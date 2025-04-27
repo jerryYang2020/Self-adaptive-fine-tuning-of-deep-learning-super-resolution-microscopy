@@ -156,7 +156,7 @@ the https://github.com/superresolusian/NanoJ-SQUIRREL/releases/tag/v1.1-alpha. F
       - `SMLM_Img`: imagedir of the live-cell smlm image for SAFT-WSF
       - `ResultDir`: imagedir for saving the results
       - `Super-Resolution model`: datadir of the pretrained SFSRM model
-      - `Denosing model`: datadir of the pretrained denoising model
+      - `Denoising model`: datadir of the pretrained denoising model
       
    - **Parameters**
       - `iteration_times`: iteration times of the SAFT (default 3)
