@@ -158,7 +158,7 @@ the https://github.com/superresolusian/NanoJ-SQUIRREL/releases/tag/v1.1-alpha. F
       - `Denoising model`: datadir of the pretrained denoising model
       
    - **Parameters**
-      - `iteration_times`: iteration times of the SAFT (default 3)
+      - `iteration_times`: iteration times of the SAFT (default 5)
         
         - Longer iteration times are known to improve the performance of SAFT. 
           However, a decrease in resolution often accompanies extended fine-tuning. 
