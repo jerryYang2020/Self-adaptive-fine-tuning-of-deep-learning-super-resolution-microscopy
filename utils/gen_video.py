@@ -2,13 +2,14 @@ import cv2
 import os,sys
 from natsort import natsorted
 import numpy as np
-from skimage import io
+from skimage import io,transform
 from shutil import rmtree
 import sys, os; sys.path.append(os.path.dirname(__file__)); import platform, gen_video_linux;
 
 def tif2jpg(tif_path_name, jpg_path_name):
     img = io.imread(tif_path_name)
     img = img / img.max()
+    img = transform.resize(img,(512,512))
     img = img * 255 - 0.00001
     img = img.astype(np.uint8)
     img = cv2.applyColorMap(img, 11)
