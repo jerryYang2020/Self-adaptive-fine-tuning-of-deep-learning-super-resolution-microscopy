@@ -50,12 +50,14 @@ def run():
                                                                continuity_level,
                                                                sparse_level,
                                                                consistency_level], outputs=fineTuning_img)
-
-                    output_image = gr.PlayableVideo(format='mp4', scale=15)
+                with gr.Column(scale=10):
+                    
+                    output_image = gr.PlayableVideo(format='mp4', scale=10)
                     with gr.Row():
                         index = gr.Number(value=4, label="iteration times", interactive=True)
                         SuperResolution = gr.Button(value="SuperResolution", variant="primary")
                         SuperResolution.click(runSSFSuperResolutionRecon, inputs=[index,lrImg,edgeImg,datadir_save], outputs=output_image)
+
         with gr.Tab(label = "WSF"):
             with gr.Row():
                 with gr.Column(scale=8):
@@ -82,10 +84,14 @@ def run():
                                                             SFSRMmodeldir,
                                                             iteration_times_WSF,
                                                             SRlr_WSF], outputs=fineTuning_img)
-
-                    output_image = gr.PlayableVideo(format='mp4', scale=15)
+                    
+                with gr.Column(scale=10):
+                    
+                    output_image = gr.PlayableVideo(format='mp4', scale=10)
                     with gr.Row():
                         index = gr.Number(value=2, label="iteration times", interactive=True)
                         SuperResolution = gr.Button(value="SuperResolution", variant="primary")
                         SuperResolution.click(runSuperResolutionRecon, inputs=[index,lrImg, edgeImg, SMLMImg,datadir_save], outputs=output_image)
+
+
     demo.launch()
