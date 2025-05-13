@@ -68,7 +68,7 @@ thereby improving the overall performance of the fine-tuning method.
 
    The directory tree should be:
    - `/Pretrained_model`: 
-     Pre-trained SFSRM models can be downloaded at the figshare repository (https://doi.org/10.6084/m9.figshare.26946601.v4).
+     Pre-trained SFSRM models can be downloaded at the figshare repository (https://doi.org/10.6084/m9.figshare.26946601.v5).
    - `/test_data`: test data
    - `/utils`: scripts folder
     
@@ -112,7 +112,7 @@ for SAFT.We used fixed-cell data or simulated data as the training dataset,
 augmented by random cropping, rotation, and flipping.SFSRM took the concatenation of a 
 low-resolution (LR) image and its edge map, which were reconstructed using the 
 NanoJ-SRRF plugin in ImageJ, as a dual-channel input(Ring radius was set to 1 and axes in ring was set to 5). 
-Pre-trained SFSRM models can be downloaded at the figshare repository (https://doi.org/10.6084/m9.figshare.26946601.v4).
+Pre-trained SFSRM models can be downloaded at the figshare repository (https://doi.org/10.6084/m9.figshare.26946601.v5).
 **It is important to ensure the integrity of the downloaded model parameters and test images, as corrupted data may lead to incorrect results.**
 ## Resolution scaling function (RSF). 
 - In our method, the point spread function (PSF) for a given microscope was approximated as a Gaussian function. 
