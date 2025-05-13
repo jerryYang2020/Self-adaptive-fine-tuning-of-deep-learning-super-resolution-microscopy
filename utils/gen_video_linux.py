@@ -2,7 +2,7 @@ import cv2
 import os
 from natsort import natsorted
 import numpy as np
-from skimage import io
+from skimage import io, transform
 from shutil import rmtree
 
 
@@ -10,6 +10,7 @@ def tif2jpg(tif_path_name, jpg_path_name):
     try:
         img = io.imread(tif_path_name)
         img = img / img.max()
+        img = transform.resize(img,(512,512))
         img = img * 255 - 0.00001
         img = img.astype(np.uint8)
         img = cv2.applyColorMap(img, 11)
