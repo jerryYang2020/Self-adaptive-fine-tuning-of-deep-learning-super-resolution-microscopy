@@ -27,7 +27,7 @@ def runFineTuning(
     iteration_times_WSF = int(iteration_times_WSF)
     SRlr_WSF = float(SRlr_WSF)
     step = 40
-    gap = 1
+    gap = 5
 
 
 
@@ -54,7 +54,7 @@ def runSuperResolutionRecon(
         SRlr_WSF = 0.00001,
         predict_size = [64, 64],
         step = 40,
-        gap = 1
+        gap = 5
 ):
     datadir_save_=os.path.join(datadir_save, 'Fine-tuning_Models')
     modelpath = os.path.join(datadir_save_, str(int(index))+'.pth')
