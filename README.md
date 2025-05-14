@@ -95,7 +95,7 @@ thereby improving the overall performance of the fine-tuning method.
    pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
    ```
   
-5. (optional) If you are linux platform, do the following thins:
+5. (optional) If you are linux platform, do the following thinggs:
 	```bash
 	sudo apt update
 	sudo apt install ffmpeg
