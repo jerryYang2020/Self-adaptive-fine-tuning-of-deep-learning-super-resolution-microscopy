@@ -64,10 +64,13 @@ thereby improving the overall performance of the fine-tuning method.
 
 
 ## Install
-1. Download the OnlineFinetuning_Demo.zip and unpack it. or clone this repository
+1. Download SAFT
+   ```bash
+   git clone https://github.com/jerryYang2020/Self-adaptive-fine-tuning-of-deep-learning-super-resolution-microscopy.git
+   ```
 
    The directory tree should be:
-   - `/Pretrained_model`: 
+   - `/pretrained_model`: 
      Pre-trained SFSRM models can be downloaded at the figshare repository (https://doi.org/10.6084/m9.figshare.26946601.v5).
    - `/test_data`: test data
    - `/utils`: scripts folder
@@ -75,7 +78,7 @@ thereby improving the overall performance of the fine-tuning method.
 ```
 /
 | --- image
-| --- Pretrained_model # downloaded
+| --- pretrained_model # downloaded
 | ...
 ```
 
@@ -89,13 +92,13 @@ thereby improving the overall performance of the fine-tuning method.
    pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
    ```
    **You can install the corresponding PyTorch version based on your specific GPU type. 
-   However, please note that using a version that is too high may lead to compatibility issues.**
+   Be aware that some versions could cause compatibility problems.**
 4. Install dependencies
    ```bash
    pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
    ```
   
-5. (optional) If you are linux platform, do the following things:
+5. (optional) If you are using a Linux platform, perform the following steps:
 	```bash
 	sudo apt update
 	sudo apt install ffmpeg
@@ -146,7 +149,7 @@ the https://github.com/superresolusian/NanoJ-SQUIRREL/releases/tag/v1.1-alpha. F
 
 4. **Correctly configure parameters and start fine-tuning and super-resolution reconstruction procedures**
 
-   - **SAFT/WSF**: Select the SAFT mode.
+   - **SAFT/WSF**: Select the SAFT/SAFT-WSF mode.
      
    - **File**
      
