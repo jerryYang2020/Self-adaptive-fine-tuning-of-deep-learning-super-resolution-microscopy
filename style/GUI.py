@@ -16,8 +16,8 @@ def run():
                         lrImg = gr.Text(value=os.sep.join(['test_data','KDEL','KDEL_TIRF.tif']), label="LR_Img")
                         edgeImg = gr.Text(value=os.sep.join(['test_data','KDEL','KDEL_EDGE.tif']), label="Edge_Img")
                         datadir_save = gr.Text(value=os.sep.join(['test_data','KDEL','KDEL_SAFT']), label="ResultDir")
-                        SFSRMmodeldir = gr.Text(value = os.sep.join(['Pretrained_model','SFSRM_SRmodel_KDEL.pth']), label="Super-Resolution model")
-                        DENmodeldir = gr.Text(value = os.sep.join(['Pretrained_model','Denoisingmodel_KDEL.pth']), label="Denoising model")
+                        SFSRMmodeldir = gr.Text(value = os.sep.join(['pretrained_model','SFSRM_SRmodel_KDEL.pth']), label="Super-Resolution model")
+                        DENmodeldir = gr.Text(value = os.sep.join(['pretrained_model','Denoisingmodel_KDEL.pth']), label="Denoising model")
 
                     with gr.Column():
                         with gr.Row():
@@ -66,7 +66,7 @@ def run():
                         edgeImg = gr.Text(value=os.sep.join(['test_data','KDEL','KDEL_EDGE.tif']), label="Edge_Img")
                         SMLMImg = gr.Text(value=os.sep.join(['test_data','KDEL','KDEL_SMLM.tif']), label="SMLM_Img")
                         datadir_save = gr.Text(value=os.sep.join(['test_data','KDEL','KDEL_WSF']), label="ResultDir")
-                        SFSRMmodeldir = gr.Text(value = os.sep.join(['Pretrained_model','SFSRM_SRmodel_KDEL.pth']), label="Super-Resolution model")
+                        SFSRMmodeldir = gr.Text(value = os.sep.join(['pretrained_model','SFSRM_SRmodel_KDEL.pth']), label="Super-Resolution model")
                     with gr.Column():
 
                         with gr.Row():
